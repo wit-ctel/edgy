@@ -159,12 +159,7 @@ class theme_edgy_core_renderer extends core_renderer {
         if ($addusermenu) {
             if (isloggedin()) {
                 $usermenu = $menu->add(fullname($USER), new moodle_url('#'), fullname($USER), 10001);
-                $usermenu->add(
-                    '<span class="glyphicon glyphicon-off"></span>' . get_string('logout'),
-                    new moodle_url('/login/logout.php', array('sesskey' => sesskey(), 'alt' => 'logout')),
-                    get_string('logout')
-                );
-
+                
                 $usermenu->add(
                     '<span class="glyphicon glyphicon-user"></span>' . get_string('viewprofile'),
                     new moodle_url('/user/profile.php', array('id' => $USER->id)),
@@ -176,6 +171,14 @@ class theme_edgy_core_renderer extends core_renderer {
                     new moodle_url('/user/edit.php', array('id' => $USER->id)),
                     get_string('editmyprofile')
                 );
+                
+                // better UX to have logout as last menu item
+                $usermenu->add(
+                    '<span class="glyphicon glyphicon-off"></span>' . get_string('logout'),
+                    new moodle_url('/login/logout.php', array('sesskey' => sesskey(), 'alt' => 'logout')),
+                    get_string('logout')
+                );
+                
             } else {
                 $usermenu = $menu->add(get_string('login'), new moodle_url('/login/index.php'), get_string('login'), 10001);
             }
