@@ -30,4 +30,3 @@ require_once('renderers/course_renderer.php');
 require_once('renderers/files_renderer.php');
 require_once('renderers/block_settings_renderer.php');
 require_once('renderers/enrol_renderer.php');
-require_once('renderers/course_format_renderer.php');
