@@ -418,4 +418,52 @@ class theme_edgy_core_renderer extends core_renderer {
         }
         return parent::box($contents, $classes, $id, $attributes);
     }
+    
+    protected function render_single_button(single_button $button) {
+        $attributes = array('type'     => 'submit',
+                            'disabled' => $button->disabled ? 'disabled' : null,
+                            'title'    => $button->tooltip,
+                            'class'    => 'btn btn-default');
+
+        if ($button->actions) {
+            $id = html_writer::random_id('single_button');
+            $attributes['id'] = $id;
+            foreach ($button->actions as $action) {
+                $this->add_action_handler($action, $id);
+            }
+        }
+
+        // first the button element
+        $output = html_writer::nonempty_tag('button', $button->label, $attributes);
+        
+        
+        // then hidden fields
+        $params = $button->url->params();
+        if ($button->method === 'post') {
+            $params['sesskey'] = sesskey();
+        }
+        foreach ($params as $var => $val) {
+            $output .= html_writer::empty_tag('input', array('type' => 'hidden', 'name' => $var, 'value' => $val));
+        }
+
+        // then div wrapper for xhtml strictness
+        $output = html_writer::tag('div', $output);
+
+        // now the form itself around it
+        if ($button->method === 'get') {
+            $url = $button->url->out_omit_querystring(true); // url without params, the anchor part allowed
+        } else {
+            $url = $button->url->out_omit_querystring();     // url without params, the anchor part not allowed
+        }
+        if ($url === '') {
+            $url = '#'; // there has to be always some action
+        }
+        $attributes = array('method' => $button->method,
+                            'action' => $url,
+                            'id'     => $button->formid);
+        $output = html_writer::tag('form', $output, $attributes);
+
+        // and finally one more wrapper with class
+        return html_writer::tag('div', $output, array('class' => $button->class));
+    }
 }
