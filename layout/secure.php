@@ -36,8 +36,8 @@ echo $OUTPUT->doctype() ?>
 <body <?php echo $OUTPUT->body_attributes(); ?>>
 
     <?php if (preg_match('/^https?:\/\/staging./', $PAGE->url)) { ?>
-      <div class="info-strip">
-        <p>You are using Moodle Staging site</p>
+      <div class="alert alert-warning">
+        <p class="text-center">You are using Moodle Staging site</p>
       </div>
     <?php } ?>
 
