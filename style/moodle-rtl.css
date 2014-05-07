@@ -2714,7 +2714,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-success {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #3cb521;
   border-color: #3cb521;
 }
@@ -2724,7 +2724,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:active,
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #31921b;
   border-color: #2b8118;
 }
@@ -2756,11 +2756,11 @@ fieldset[disabled] .btn-success.active {
 
 .btn-success .badge {
   color: #3cb521;
-  background-color: #4a4a4a;
+  background-color: #fff;
 }
 
 .btn-info {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #237dac;
   border-color: #237dac;
 }
@@ -2770,7 +2770,7 @@ fieldset[disabled] .btn-success.active {
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #1c648a;
   border-color: #195879;
 }
@@ -2802,11 +2802,11 @@ fieldset[disabled] .btn-info.active {
 
 .btn-info .badge {
   color: #237dac;
-  background-color: #4a4a4a;
+  background-color: #fff;
 }
 
 .btn-warning {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #d47500;
   border-color: #d47500;
 }
@@ -2816,7 +2816,7 @@ fieldset[disabled] .btn-info.active {
 .btn-warning:active,
 .btn-warning.active,
 .open .dropdown-toggle.btn-warning {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #ab5e00;
   border-color: #975300;
 }
@@ -2848,11 +2848,11 @@ fieldset[disabled] .btn-warning.active {
 
 .btn-warning .badge {
   color: #d47500;
-  background-color: #4a4a4a;
+  background-color: #fff;
 }
 
 .btn-danger {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #cd0200;
   border-color: #cd0200;
 }
@@ -2862,7 +2862,7 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #a40200;
   border-color: #900100;
 }
@@ -2894,7 +2894,7 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-danger .badge {
   color: #cd0200;
-  background-color: #4a4a4a;
+  background-color: #fff;
 }
 
 .btn-link {
@@ -18445,7 +18445,7 @@ fieldset[disabled] .submit.buttons input[name="cancel"] {
 
 input[id$="_clearbutton"],
 input[type="reset"] {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #d47500;
   border-color: #d47500;
 }
@@ -18460,7 +18460,7 @@ input[id$="_clearbutton"].active,
 input[type="reset"].active,
 .open .dropdown-toggleinput[id$="_clearbutton"],
 .open .dropdown-toggleinput[type="reset"] {
-  color: #4a4a4a;
+  color: #fff;
   background-color: #ab5e00;
   border-color: #975300;
 }
@@ -18511,7 +18511,7 @@ fieldset[disabled] input[type="reset"].active {
 input[id$="_clearbutton"] .badge,
 input[type="reset"] .badge {
   color: #d47500;
-  background-color: #4a4a4a;
+  background-color: #fff;
 }
 
 button.yui3-button.closebutton,
