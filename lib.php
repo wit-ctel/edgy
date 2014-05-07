@@ -136,7 +136,7 @@ function theme_edgy_brand_font_link($settings) {
             .$fontname.':'.$fontweight.$fontitalic.'&amp;text='.$text.'">';
 }
 
-function bootstrap_grid($hassidepre, $hassidepost) {
+function edgy_grid($hassidepre, $hassidepost) {
     if ($hassidepre && $hassidepost) {
         $regions = array('content' => 'col-sm-4 col-sm-push-4 col-md-6 col-md-push-3');
         $regions['pre'] = 'col-sm-4 col-sm-pull-4 col-md-3 col-md-pull-6';
