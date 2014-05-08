@@ -52,6 +52,11 @@ input[type="reset"]
     .btn;
     .btn-default;
     .btn-lineup;
+    .btn-shadow(@btn-default-bg);
+    
+    &:hover {
+      .btn-shadow(darken(@btn-default-bg, 4%));
+    }
 }
 
 input.form-submit,
@@ -59,7 +64,12 @@ input#id_submitbutton,
 input#id_submitbutton2,
 .path-admin .buttons input[type="submit"],
 td.submit input {
-    .btn-primary
+    .btn-primary;
+    .btn-shadow(@btn-primary-bg);
+    
+    &:hover {
+      .btn-shadow(darken(@btn-primary-bg, 4%));
+    }
 }
 
 // override .btn-primary
