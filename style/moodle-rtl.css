@@ -2670,7 +2670,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: #fff;
   background-color: #446e9b;
-  border-color: #446e9b;
+  border-color: #345578;
 }
 
 .btn-primary:hover,
@@ -2680,7 +2680,7 @@ fieldset[disabled] .btn-default.active {
 .open .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #385a7f;
-  border-color: #315070;
+  border-color: #22374d;
 }
 
 .btn-primary:active,
@@ -2705,7 +2705,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: #446e9b;
-  border-color: #446e9b;
+  border-color: #345578;
 }
 
 .btn-primary .badge {
@@ -7318,6 +7318,10 @@ button.close {
   text-shadow: none;
 }
 
+.btn {
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
 .btn-default {
   background-image: -webkit-linear-gradient(#fff, #eee 50%, #e4e4e4);
   background-image: linear-gradient(#fff, #eee 50%, #e4e4e4);
@@ -7325,6 +7329,7 @@ button.close {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe4e4e4', GradientType=0);
   filter: none;
   border: 1px solid #d5d5d5;
+  text-shadow: none;
 }
 
 .btn-default:hover {
@@ -8915,6 +8920,7 @@ body.jsenabled .formlisting {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
   color: #4a4a4a;
   background-color: #eee;
   border-color: #eee;
@@ -8968,6 +8974,7 @@ fieldset[disabled] .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.t
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe4e4e4', GradientType=0);
   filter: none;
   border: 1px solid #d5d5d5;
+  text-shadow: none;
 }
 
 .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu-default:hover {
@@ -17713,10 +17720,17 @@ input[type="reset"] {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
   color: #4a4a4a;
   background-color: #eee;
   border-color: #eee;
   margin: 0 5px 3px 0;
+  background-image: -webkit-linear-gradient(#fff, #eee 50%, #e4e4e4);
+  background-image: linear-gradient(#fff, #eee 50%, #e4e4e4);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe4e4e4', GradientType=0);
+  filter: none;
+  border: 1px solid #d5d5d5;
 }
 
 button:focus,
@@ -17803,6 +17817,7 @@ input[type="reset"]-default {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe4e4e4', GradientType=0);
   filter: none;
   border: 1px solid #d5d5d5;
+  text-shadow: none;
 }
 
 button-default:hover,
@@ -18099,6 +18114,19 @@ input[type="reset"] .badge {
   background-color: #4a4a4a;
 }
 
+button:hover,
+input.form-submit:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-image: -webkit-linear-gradient(#fff, #e4e4e4 50%, #dadada);
+  background-image: linear-gradient(#fff, #e4e4e4 50%, #dadada);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdadada', GradientType=0);
+  filter: none;
+  border: 1px solid #cacaca;
+}
+
 input.form-submit,
 input#id_submitbutton,
 input#id_submitbutton2,
@@ -18106,7 +18134,13 @@ input#id_submitbutton2,
 td.submit input {
   color: #fff;
   background-color: #446e9b;
-  border-color: #446e9b;
+  border-color: #345578;
+  background-image: -webkit-linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+  background-image: linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6d94bf', endColorstr='#ff3e648d', GradientType=0);
+  filter: none;
+  border: 1px solid #345578;
 }
 
 input.form-submit:hover,
@@ -18136,7 +18170,7 @@ td.submit input.active,
 .open .dropdown-toggletd.submit input {
   color: #fff;
   background-color: #385a7f;
-  border-color: #315070;
+  border-color: #22374d;
 }
 
 input.form-submit:active,
@@ -18233,7 +18267,7 @@ fieldset[disabled] input#id_submitbutton2.active,
 fieldset[disabled] .path-admin .buttons input[type="submit"].active,
 fieldset[disabled] td.submit input.active {
   background-color: #446e9b;
-  border-color: #446e9b;
+  border-color: #345578;
 }
 
 input.form-submit .badge,
@@ -18243,6 +18277,19 @@ input#id_submitbutton2 .badge,
 td.submit input .badge {
   color: #446e9b;
   background-color: #fff;
+}
+
+input.form-submit:hover,
+input#id_submitbutton:hover,
+input#id_submitbutton2:hover,
+.path-admin .buttons input[type="submit"]:hover,
+td.submit input:hover {
+  background-image: -webkit-linear-gradient(#5f8ab9, #3e648d 50%, #385a7f);
+  background-image: linear-gradient(#5f8ab9, #3e648d 50%, #385a7f);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5f8ab9', endColorstr='#ff385a7f', GradientType=0);
+  filter: none;
+  border: 1px solid #2e4b69;
 }
 
 #notice .singlebutton+.singlebutton input,
@@ -18264,6 +18311,7 @@ td.submit input .badge {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 }
 
 #notice .singlebutton+.singlebutton input:focus,
@@ -18317,6 +18365,7 @@ fieldset[disabled] .submit.buttons input[name="cancel"] {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe4e4e4', GradientType=0);
   filter: none;
   border: 1px solid #d5d5d5;
+  text-shadow: none;
 }
 
 #notice .singlebutton+.singlebutton input-default:hover,
