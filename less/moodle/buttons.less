@@ -53,6 +53,7 @@ input[type="reset"]
     .btn-default;
     .btn-lineup;
     .btn-shadow(@btn-default-bg);
+    text-shadow: none;
     
     &:hover {
       .btn-shadow(darken(@btn-default-bg, 4%));
@@ -75,17 +76,23 @@ td.submit input {
 // override .btn-primary
 #notice .singlebutton + .singlebutton input,
 .submit.buttons input[name="cancel"] {
-    .btn
+    .btn;
 }
 
 #notice .singlebutton + .singlebutton input,
 .submit.buttons input[name="cancel"] {
-    .btn-lineup
+    .btn-lineup;
 }
 
 input[id$="_clearbutton"],
 input[type="reset"] {
-    .btn-warning
+    .btn-warning;
+    
+    .btn-shadow(@btn-warning-bg);
+
+    &:hover {
+      .btn-shadow(darken(@btn-warning-bg, 4%));
+    }
 }
 
 button.yui3-button.closebutton,

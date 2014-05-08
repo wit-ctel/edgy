@@ -17731,6 +17731,7 @@ input[type="reset"] {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe4e4e4', GradientType=0);
   filter: none;
   border: 1px solid #d5d5d5;
+  text-shadow: none;
 }
 
 button:focus,
@@ -18497,6 +18498,12 @@ input[type="reset"] {
   color: #fff;
   background-color: #d47500;
   border-color: #d47500;
+  background-image: -webkit-linear-gradient(#ff9c21, #d47500 50%, #c06a00);
+  background-image: linear-gradient(#ff9c21, #d47500 50%, #c06a00);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9c21', endColorstr='#ffc06a00', GradientType=0);
+  filter: none;
+  border: 1px solid #a15900;
 }
 
 input[id$="_clearbutton"]:hover,
@@ -18561,6 +18568,16 @@ input[id$="_clearbutton"] .badge,
 input[type="reset"] .badge {
   color: #d47500;
   background-color: #fff;
+}
+
+input[id$="_clearbutton"]:hover,
+input[type="reset"]:hover {
+  background-image: -webkit-linear-gradient(#ff930d, #c06a00 50%, #ab5e00);
+  background-image: linear-gradient(#ff930d, #c06a00 50%, #ab5e00);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff930d', endColorstr='#ffab5e00', GradientType=0);
+  filter: none;
+  border: 1px solid #8d4e00;
 }
 
 button.yui3-button.closebutton,
