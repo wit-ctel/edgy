@@ -24,7 +24,7 @@
  * breaking installation or upgrade unwittingly.
  */
 
-$regions = bootstrap_grid(false, false);
+$regions = edgy_grid(false, false);
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
