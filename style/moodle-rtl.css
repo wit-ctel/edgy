@@ -10540,6 +10540,10 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   padding-left: 0.5em;
 }
 
+.section .collapsibleregion {
+  overflow: visible;
+}
+
 .section .activity .spinner {
   right: 100%;
   position: absolute;
