@@ -16282,6 +16282,11 @@ textarea.searchform input[type="text"] {
 
 .block_course_contents .section-item {
   list-style-image: none;
+  padding: 4px;
+}
+
+.block_course_contents .section-item.selected {
+  background-color: #d7ecf7;
 }
 
 .mform .fcontainer .fitem .fitemtitle,
