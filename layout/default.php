@@ -17,9 +17,15 @@
 
 $hassidepre = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
+$hassidefooterleft = $PAGE->blocks->region_has_content('footer-left', $OUTPUT);
+$hassidefootermid = $PAGE->blocks->region_has_content('footer-mid', $OUTPUT);
+$hassidefooterright = $PAGE->blocks->region_has_content('footer-right', $OUTPUT);
 
 $knownregionpre = $PAGE->blocks->is_known_region('side-pre');
 $knownregionpost = $PAGE->blocks->is_known_region('side-post');
+$knownregionfooterleft = $PAGE->blocks->is_known_region('footer-left');
+$knownregionfootermid = $PAGE->blocks->is_known_region('footer-mid');
+$knownregionfooterright = $PAGE->blocks->is_known_region('footer-right');
 
 $regions = edgy_grid($hassidepre, $hassidepost);
 $PAGE->set_popup_notification_allowed(false);
@@ -103,24 +109,62 @@ echo $OUTPUT->doctype() ?>
         if ($knownregionpre) {
             echo $OUTPUT->blocks('side-pre', $regions['pre']);
         }?>
-        <?php
-        if ($knownregionpost) {
-            echo $OUTPUT->blocks('side-post', $regions['post']);
-        }?>
     </div>
 
-    <footer id="page-footer">
-        <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-        <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
-        <?php
-        echo $OUTPUT->login_info();
-        echo $OUTPUT->home_link();
-        echo $OUTPUT->standard_footer_html();
-        ?>
-    </footer>
+</div> <!-- end #page -->
 
-    <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
-</div>
+<aside id="pre-footer" class="pre-footer"> 
+  <div class="container">
+    <section class="col-md-4 footer-region footer-region--left">
+    <?php
+      if ($knownregionfooterleft) {
+          echo $OUTPUT->blocks('footer-left');
+      }?>
+    </section> <!-- end .footer-region--left -->
+
+    <section class="col-md-4 footer-region footer-region--mid">
+      <?php
+        if ($knownregionfootermid) {
+            echo $OUTPUT->blocks('footer-mid');
+        }?>
+    </section> <!-- end .footer-region--mid --> 
+
+    <section class="col-md-4 footer-region footer-region--right">
+      <?php
+        if ($knownregionfooterright) {
+            echo $OUTPUT->blocks('footer-right');
+        }?>
+    </section> <!-- end .footer-region--right -->
+  </div>
+</aside> <!-- end .pre-footer -->
+
+<footer id="page-footer">
+    
+  <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
+  
+  <div class="container footer-inner">
+    <div class="pull-left">
+       <a title="go to Waterford Institute of Technology homepage" class="logo site-brand__logo" href="http://wit.ie/">
+        <img src="<?php echo $OUTPUT->pix_url('brand-logo', 'theme'); ?>" alt="Waterford Institute of Technology" />
+       </a>
+       <p class="copyright">&copy; Waterford Institute of Technology</p>
+    </div>
+    
+    <nav>
+      <ul class="footer-nav">
+        <li><a href="http://elearning.wit.ie/support">Help</a></li>
+        <li><a href="http://docs.moodle.org">Moodle.org Docs</a></li>
+        <li><a href="/">Privacy Policy</a></li>
+        <li><a href="/">Terms of Use</a></li>
+      </ul>
+    </nav>
+    
+  </div>
+  
+</footer>
+
+<?php echo $OUTPUT->standard_end_of_body_html() ?>
+
 </body>
 </html>
