@@ -130,6 +130,23 @@ a {
   font-size: 13px;
 }
 
+.footer-nav {
+  list-style: none;
+  font-size: 13px;
+  font-weight: bold;
+  
+  > li {
+    margin-left: 1em;
+    
+    &,
+      > a {
+            display: inline-block;
+           *display: inline;
+            zoom: 1;
+      }
+    }
+}
+
 // Indicators =================================================================
 
 // Progress bars ==============================================================
@@ -143,4 +160,17 @@ a {
       color: #fff;
     }
   }
+}
+
+// Branding
+
+.site-brand__logo {
+  display: block;
+  margin-bottom: 0.9em;
+}
+
+.copyright {
+  font-size: 13px;
+  color: @gray-light;
+  text-align: left;
 }

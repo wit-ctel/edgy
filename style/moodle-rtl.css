@@ -7449,8 +7449,36 @@ a:focus {
   font-size: 13px;
 }
 
+.footer-nav {
+  list-style: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer-nav>li {
+  margin-right: 1em;
+}
+
+.footer-nav>li,
+.footer-nav>li>a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
 .panel-primary .panel-title {
   color: #fff;
+}
+
+.site-brand__logo {
+  display: block;
+  margin-bottom: 0.9em;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #999;
+  text-align: right;
 }
 
 @media print {
@@ -9351,6 +9379,10 @@ ul.dragdrop-keyboard-drag li {
 .block-control-actions .moodle-core-dragdrop-draghandle img {
   width: 12px;
   height: 12px;
+}
+
+#page {
+  margin-bottom: 3em;
 }
 
 .path-admin .incompatibleblockstable td.c0 {
@@ -17032,12 +17064,6 @@ textarea#page-mod-forum-discuss .discussioncontrols .discussioncontrol.movediscu
   float: right;
 }
 
-#page-footer {
-  margin-top: 1em;
-  padding: 1em 0;
-  border-top: 2px solid #ddd;
-}
-
 .maincalendar .calendarmonth td,
 .maincalendar .calendarmonth th {
   border: 1px dotted #ddd;
@@ -17147,6 +17173,26 @@ div#dock {
 .path-mod-survey .reportbuttons,
 .path-mod-survey .centerpara {
   text-align: center;
+}
+
+.pre-footer {
+  background-color: #eee;
+  padding: 3em 0;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3) inset;
+}
+
+#page-footer {
+  padding: 0.8em 0;
+}
+
+#page-footer nav {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.footer-inner {
+  display: table;
 }
 
 .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax {
