@@ -25,4 +25,5 @@
 
 $plugins = array(
     'bootstrap' => array('files' => array('bootstrap-3_1_1.js')),
+    'edgy' => array('files' => array('edgy.js')),
 );
