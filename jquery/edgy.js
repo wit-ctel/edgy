@@ -5,17 +5,22 @@ $(function(){
     .before(function(){
       return "<a href=\"#\" class=\"content-toggle\" title=\"Click to expand or collapse\" data-text-swap=\"Hide topic\">Show topic</a>";
     });
-    
+  
+  // event listener to handle text toggle on show/hide link   
+  $(".content--editing").on("show.bs.collapse hide.bs.collapse", function() {
+    var $link = $(this).prev(".content-toggle");
+    if ($link.text() == $link.data("text-swap")) {
+      $link.text($link.data("text-original"));
+    } else {
+      $link.data("text-original", $link.text());
+      $link.text($link.data("text-swap"));
+    }
+  });
+  
   $(".section .content-toggle")  
     .click(function(event){
       event.preventDefault();
       var dis = $(this);
-      if (dis.text() == dis.data("text-swap")) {
-        dis.text(dis.data("text-original"));
-      } else {
-        dis.data("text-original", dis.text());
-        dis.text(dis.data("text-swap"));
-      }
       dis
         .parent()
         .find(".content--editing")
