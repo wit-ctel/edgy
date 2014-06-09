@@ -21,4 +21,16 @@ $(function(){
         .find(".content--editing")
         .collapse('toggle');
       });
+      
+   var section = $(location).attr('hash');
+   
+   if (section) {
+     $(section + " .content--editing")
+       .collapse('show');
+      
+     $(section)   
+       .animate({
+               scrollTop: $(section).offset().top
+           }, 1000);
+   }    
 });
