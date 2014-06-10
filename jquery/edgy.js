@@ -17,6 +17,7 @@ $(function(){
     }
   });
   
+  // event listener on content-toggle link to handle show/hide on content
   $(".section .content-toggle")  
     .click(function(event){
       event.preventDefault();
@@ -29,6 +30,7 @@ $(function(){
       
    var section = $(location).attr('hash');
    
+   // reveal topic content and scroll to topic if it appears in url
    if (section) {
      $(section + " .content--editing")
        .collapse('show');
