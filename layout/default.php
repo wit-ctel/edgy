@@ -114,7 +114,7 @@ echo $OUTPUT->doctype() ?>
 
 </div> <!-- end #page -->
 
-
+<?php if($hassidefooterleft || $hassidefootermid || $hassidefooterright) { ?>
 <aside id="pre-footer" class="pre-footer"> 
   <div class="container">
     <section class="col-md-4 footer-region footer-region--left">
@@ -139,6 +139,7 @@ echo $OUTPUT->doctype() ?>
     </section> <!-- end .footer-region--right -->
   </div>
 </aside> <!-- end .pre-footer -->
+<?php } ?>
 
 <footer id="page-footer">
     
