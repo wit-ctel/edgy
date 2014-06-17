@@ -10828,7 +10828,8 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 }
 
 .course-content ul.section {
-  margin: 1em 0;
+  margin: 0;
+  margin-bottom: 1em;
 }
 
 .course-content ul.topics li.section .content,
