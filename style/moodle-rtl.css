@@ -10671,7 +10671,7 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 }
 
 .section li.activity {
-  padding: .2em;
+  margin-bottom: 1em;
   clear: both;
 }
 
