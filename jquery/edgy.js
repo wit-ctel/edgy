@@ -3,7 +3,7 @@ $(function(){
   
   $(".content--editing")
     .before(function(){
-      return "<a href=\"#\" class=\"content-toggle\" title=\"Click to expand or collapse\" data-text-swap=\"Hide topic\">Show topic</a>";
+      return "<a href=\"#\" class=\"content-toggle\" title=\"Click to expand or collapse\" data-text-swap=\"Hide\">Show</a>";
     });
   
   // event listener to handle text toggle on show/hide link   
