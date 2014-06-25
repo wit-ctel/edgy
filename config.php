@@ -167,9 +167,14 @@ $THEME->javascripts = array(
 $THEME->javascripts_footer = array(
 );
 
+$THEME->javascripts[] = 'modernizr.custom.83499.js';
+
+// modernizr contains html5shiv
+/*
 if (core_useragent::is_ie() && !core_useragent::check_ie_version('9.0')) {
     $THEME->javascripts[] = 'html5shiv';
 }
+ */
 
 $THEME->javascripts[] = 'css_conditions_workaround';
 
