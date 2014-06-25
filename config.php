@@ -167,7 +167,7 @@ $THEME->javascripts = array(
 $THEME->javascripts_footer = array(
 );
 
-$THEME->javascripts[] = 'modernizr.custom.83499.js';
+$THEME->javascripts[] = 'modernizr.custom.83499';
 
 // modernizr contains html5shiv
 /*
