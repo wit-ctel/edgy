@@ -423,7 +423,8 @@ class theme_edgy_core_renderer extends core_renderer {
         $attributes = array('type'     => 'submit',
                             'disabled' => $button->disabled ? 'disabled' : null,
                             'title'    => $button->tooltip,
-                            'class'    => 'btn btn-default');
+                            'class'    => 'btn btn-default',
+                            'value'    => $button->label);
 
         if ($button->actions) {
             $id = html_writer::random_id('single_button');
@@ -434,9 +435,9 @@ class theme_edgy_core_renderer extends core_renderer {
         }
 
         // first the button element
-        $output = html_writer::nonempty_tag('button', $button->label, $attributes);
+        $output = html_writer::empty_tag('input', $attributes); 
         
-        
+         
         // then hidden fields
         $params = $button->url->params();
         if ($button->method === 'post') {
