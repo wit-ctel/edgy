@@ -12290,6 +12290,15 @@ span.editinstructions {
   filter: alpha(opacity=50);
 }
 
+.moodleheader .courseimage img {
+  display: block;
+  border-radius: 6px;
+  float: right;
+  height: auto;
+  margin-left: 25px;
+  max-width: 240px;
+}
+
 @media (min-width:1200px) and (max-width:1600px) {
   #course-category-listings.columns-3 {
     background-color: transparent;
