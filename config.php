@@ -90,7 +90,7 @@ $THEME->layouts = array(
     // Server administration scripts.
     'admin' => array(
         'file' => 'default.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'footer-left', 'footer-mid', 'footer-right'),
         'defaultregion' => 'side-pre',
         'options' => array('fluid' => true),
     ),
@@ -151,7 +151,7 @@ $THEME->layouts = array(
     // The pagelayout used for reports.
     'report' => array(
         'file' => 'default.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'footer-left', 'footer-mid', 'footer-right'),
         'defaultregion' => 'side-pre',
     ),
     // The pagelayout used for safebrowser and securewindow.
