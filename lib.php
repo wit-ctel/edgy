@@ -161,3 +161,25 @@ function theme_edgy_initialise_reader(moodle_page $page) {
     $page->requires->yui_module('moodle-theme_bootstrap-reader', 'M.theme_bootstrap.initreader', array());
 }
 
+/**
+ * Prints form with a dropdown list of courses, which when submitted, views the selected course
+ *
+ * @param array $courses - courses to be included in the dropdown list
+ */
+function print_goto_course_form($courses, $formid, $return=false) {
+    global $CFG, $USER, $OUTPUT;;
+    
+    // prepare courses for use in popup_form()
+    foreach ($courses as $course) {
+        $courses[$course->id] = $course->fullname;
+    }
+    
+    $output = $OUTPUT->single_select(new moodle_url($CFG->wwwroot.'/course/view.php'), 
+                                        'id', $courses, '', array('' => '[Choose a module...]'), $formid);   
+                                        
+    if($return) {
+        return $output;
+    } else {
+        echo $output;
+    }
+}
