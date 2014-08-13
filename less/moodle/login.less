@@ -1,25 +1,44 @@
 .loginbox {
-    border-radius: 3px;
     .form-group;
-
+    margin-top: 2em;
+    
+    
+    .loginpanel {
+        background-color: rgb(255,255,255);
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 4px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+        padding: 18px;
+    }
+    
+    .loginpanel h2 {
+        margin-top: 0;
+    }
+    
+    .signuppanel h2 {
+        color: #eee;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+    }
+    
+    .subcontent {
+        color: #fff;
+    }
+    
     &.onecolumn  {
         .make-sm-column(6);
         .make-sm-column-push(3);
         .make-md-column(4);
-        .make-md-column-push(4);
-        .well;
     }
 
     &.twocolumns .loginpanel {
         .make-sm-column(4);
-        .make-lg-column(3);
-        .well;
+        .make-lg-column(4);
     }
 
     &.twocolumns .signuppanel {
         .make-sm-column(7);
         .make-sm-column-push(1);
-        .make-lg-column(8);
+        .make-lg-column(7);
         .make-lg-column-push(1);
     }
 
@@ -60,4 +79,9 @@
             display: none;
         }
     }
+}
+
+body.path-login {
+    background: url([[pix:theme|home/background-sm]]) no-repeat center center fixed;
+    background-size: cover; 
 }
