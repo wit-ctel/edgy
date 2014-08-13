@@ -9398,7 +9398,7 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 90px;
+  height: 120px;
   width: 100%;
   background-color: #fff;
 }
@@ -17205,12 +17205,6 @@ div#dock {
   padding: 0.8em 0;
 }
 
-#page-footer nav {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: left;
-}
-
 .footer-inner {
   display: table;
 }
@@ -19154,6 +19148,22 @@ input.fp-btn-choose {
   body.path-login {
     background: url([[pix:theme|home/background-lg]]) no-repeat center center fixed;
     background-size: cover;
+  }
+}
+
+@media (min-width:768px) {
+  #page-footer {
+    height: 90px;
+  }
+
+  #page-footer nav {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  .site-brand__logo {
+    float: right;
   }
 }
 

@@ -146,13 +146,10 @@ echo $OUTPUT->doctype() ?>
   <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
   
   <div class="container footer-inner">
-    <div class="pull-left">
-       <a title="go to Waterford Institute of Technology homepage" class="logo site-brand__logo" href="http://wit.ie/">
-        <img src="<?php echo $OUTPUT->pix_url('brand-logo', 'theme'); ?>" alt="Waterford Institute of Technology" />
-       </a>
-       <p class="copyright">&copy; Waterford Institute of Technology</p>
-    </div>
-    
+    <a title="go to Waterford Institute of Technology homepage" class="logo site-brand__logo" href="http://wit.ie/">
+      <img src="<?php echo $OUTPUT->pix_url('brand-logo', 'theme'); ?>" alt="Waterford Institute of Technology" />
+    </a>
+       
     <nav>
       <ul class="footer-nav">
         <li><a href="http://elearning.wit.ie/support">Help</a></li>
