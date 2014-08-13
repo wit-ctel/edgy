@@ -15,31 +15,27 @@
         margin-top: 0;
     }
     
-    .signuppanel h2 {
+    .signuppanel h2, .text_to_html {
         color: #eee;
-        text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
     }
+     
+    .support {
+        color: #f2a96e;
+    } 
     
-    .subcontent {
-        color: #fff;
-    }
-    
-    &.onecolumn  {
-        .make-sm-column(6);
-        .make-sm-column-push(3);
-        .make-md-column(4);
-    }
-
     &.twocolumns .loginpanel {
         .make-sm-column(4);
+        .make-sm-column-push(8);
         .make-lg-column(4);
+        .make-lg-column-push(8);
     }
 
     &.twocolumns .signuppanel {
-        .make-sm-column(7);
-        .make-sm-column-push(1);
-        .make-lg-column(7);
-        .make-lg-column-push(1);
+        .make-sm-column(8);
+        .make-sm-column-pull(4);
+        .make-lg-column(8);
+        .make-lg-column-pull(4);
     }
 
     .loginform {
@@ -81,7 +77,12 @@
     }
 }
 
+.image-attribution {
+    color: #fff;
+    float: right;
+}
+
 body.path-login {
-    background: url([[pix:theme|home/background-sm]]) no-repeat center center fixed;
+    background: url([[pix:theme|home/background-xs]]) no-repeat center center fixed;
     background-size: cover; 
 }
