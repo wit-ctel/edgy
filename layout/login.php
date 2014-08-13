@@ -76,7 +76,9 @@ echo $OUTPUT->doctype() ?>
         </div>
 
     </div>
-
+    
+    <small class="image-attribution">&copy; Image courtesy of Terry Murphy Photography</small> 
+    
 </div> <!-- end #page -->
 
 <footer id="page-footer">
