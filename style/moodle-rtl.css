@@ -15304,40 +15304,14 @@ a#hidebankcmd {
   margin-top: 0;
 }
 
-.loginbox .signuppanel h2 {
+.loginbox .signuppanel h2,
+.loginbox .text_to_html {
   color: #eee;
-  text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
 }
 
-.loginbox .subcontent {
-  color: #fff;
-}
-
-.loginbox.onecolumn {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-@media (min-width:768px) {
-  .loginbox.onecolumn {
-    float: right;
-    width: 50%;
-  }
-}
-
-@media (min-width:768px) {
-  .loginbox.onecolumn {
-    right: 25%;
-  }
-}
-
-@media (min-width:992px) {
-  .loginbox.onecolumn {
-    float: right;
-    width: 33.33333333%;
-  }
+.loginbox .support {
+  color: #f2a96e;
 }
 
 .loginbox.twocolumns .loginpanel {
@@ -15354,10 +15328,22 @@ a#hidebankcmd {
   }
 }
 
+@media (min-width:768px) {
+  .loginbox.twocolumns .loginpanel {
+    right: 66.66666667%;
+  }
+}
+
 @media (min-width:1200px) {
   .loginbox.twocolumns .loginpanel {
     float: right;
     width: 33.33333333%;
+  }
+}
+
+@media (min-width:1200px) {
+  .loginbox.twocolumns .loginpanel {
+    right: 66.66666667%;
   }
 }
 
@@ -15371,26 +15357,26 @@ a#hidebankcmd {
 @media (min-width:768px) {
   .loginbox.twocolumns .signuppanel {
     float: right;
-    width: 58.33333333%;
+    width: 66.66666667%;
   }
 }
 
 @media (min-width:768px) {
   .loginbox.twocolumns .signuppanel {
-    right: 8.33333333%;
+    left: 33.33333333%;
   }
 }
 
 @media (min-width:1200px) {
   .loginbox.twocolumns .signuppanel {
     float: right;
-    width: 58.33333333%;
+    width: 66.66666667%;
   }
 }
 
 @media (min-width:1200px) {
   .loginbox.twocolumns .signuppanel {
-    right: 8.33333333%;
+    left: 33.33333333%;
   }
 }
 
@@ -15489,8 +15475,13 @@ textarea.loginbox .loginform .form-input input[type="password"] {
   display: none;
 }
 
+.image-attribution {
+  color: #fff;
+  float: left;
+}
+
 body.path-login {
-  background: url([[pix:theme|home/background-sm]]) no-repeat center center fixed;
+  background: url([[pix:theme|home/background-xs]]) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -19152,9 +19143,9 @@ input.fp-btn-choose {
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
   body.path-login {
-    background: url([[pix:theme|home/background-md]]) no-repeat center center fixed;
+    background: url([[pix:theme|home/background-sm]]) no-repeat center center fixed;
     background-size: cover;
   }
 }
