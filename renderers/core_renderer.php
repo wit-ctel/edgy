@@ -136,7 +136,7 @@ class theme_edgy_core_renderer extends core_renderer {
                 // better UX to have logout as last menu item
                 $usermenu->add(
                     '<span class="glyphicon glyphicon-off"></span>' . get_string('logout'),
-                    new moodle_url('/login/logout.php', array('sesskey' => sesskey(), 'alt' => 'logout')),
+                    new moodle_url('/login/logout.php', array('sesskey' => sesskey(), 'alt' => 'logout', 'loginpage' => 1)),
                     get_string('logout')
                 );
                 
