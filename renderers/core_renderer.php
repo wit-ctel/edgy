@@ -102,45 +102,6 @@ class theme_edgy_core_renderer extends core_renderer {
 
         $addusermenu = true;
         $addlangmenu = true;
-        $addmessagemenu = true;
-
-        if (!isloggedin() || isguestuser()) {
-            $addmessagemenu = false;
-        }
-
-        if ($addmessagemenu) {
-            $messages = $this->get_user_messages();
-            $messagecount = count($messages);
-            $messagemenu = $menu->add(
-                $messagecount . ' ' . get_string('messages', 'message'),
-                new moodle_url('/message/index.php', array('viewing' => 'recentconversations')),
-                get_string('messages', 'message'),
-                9999
-            );
-            foreach ($messages as $message) {
-
-                if (!$message->from) { // Workaround for issue #103.
-                    continue;
-                }
-                $senderpicture = new user_picture($message->from);
-                $senderpicture->link = false;
-                $senderpicture = $this->render($senderpicture);
-
-                $messagecontent = $senderpicture;
-                $messagecontent .= html_writer::start_span('msg-body');
-                $messagecontent .= html_writer::start_span('msg-title');
-                $messagecontent .= html_writer::span($message->from->firstname . ': ', 'msg-sender');
-                $messagecontent .= $message->text;
-                $messagecontent .= html_writer::end_span();
-                $messagecontent .= html_writer::start_span('msg-time');
-                $messagecontent .= html_writer::tag('i', '', array('class' => 'icon-time'));
-                $messagecontent .= html_writer::span($message->date);
-                $messagecontent .= html_writer::end_span();
-
-                $messageurl = new moodle_url('/message/index.php', array('user1' => $USER->id, 'user2' => $message->from->id));
-                $messagemenu->add($messagecontent, $messageurl, $message->state);
-            }
-        }
 
         $langs = get_string_manager()->get_list_of_translations();
         if (count($langs) < 2
