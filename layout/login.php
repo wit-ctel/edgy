@@ -51,6 +51,34 @@ echo $OUTPUT->doctype() ?>
       <div id="page-content" class="row">
         <div id="region-main" class="<?php echo $regions['content']; ?>">
             <?php echo $OUTPUT->main_content(); ?>
+        
+            <?php 
+                require_once($CFG->dirroot .'/mod/forum/lib.php');
+                
+                if (! $newsforum = forum_get_course_forum($SITE->id, 'news')) {
+                    print_error('cannotfindorcreateforum', 'forum');
+                }
+                
+                // fetch news forum context for proper filtering to happen
+                $newsforumcm = get_coursemodule_from_instance('forum', $newsforum->id, $SITE->id, false, MUST_EXIST);
+                $newsforumcontext = context_module::instance($newsforumcm->id, MUST_EXIST);
+                
+                $forumname = format_string($newsforum->name, true, array('context' => $newsforumcontext));
+                echo html_writer::tag('a', get_string('skipa', 'access', core_text::strtolower(strip_tags($forumname))), array('href'=>'#skipsitenews', 'class'=>'skip-block'));
+                
+                // wraps site news forum in div container.
+                echo html_writer::start_tag('div', array('id'=>'site-news-forum'));
+                
+                echo $OUTPUT->heading($forumname, 3);
+                
+                forum_print_latest_discussions($SITE, $newsforum, $SITE->newsitems, 'header', 'p.modified DESC');
+                
+                //end site news forum div container
+                echo html_writer::end_tag('div');
+
+                echo html_writer::tag('span', '', array('class'=>'skip-block-to', 'id'=>'skipsitenews'));
+            ?>
+        
         </div>
 
     </div>
