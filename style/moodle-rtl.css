@@ -10948,6 +10948,7 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   white-space: normal;
+  max-width: none;
   display: block;
 }
 
@@ -14615,6 +14616,7 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
   -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   white-space: normal;
+  max-width: none;
   position: fixed;
   top: inherit;
   right: inherit;
@@ -19503,6 +19505,7 @@ input.fp-btn-choose {
   -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   white-space: normal;
+  max-width: none;
   width: 276px;
   display: block;
 }
@@ -19859,6 +19862,32 @@ input.fp-btn-choose {
   .site-brand__logo {
     float: right;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.inplace-help {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.popover {
+  max-width: none;
 }
 
 .phpinfo td {

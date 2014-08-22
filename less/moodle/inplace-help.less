@@ -1,0 +1,27 @@
+/** 
+ * Visually hide, but keep around for screen readers
+ *
+ * NOTE: find better place to house this rule, longterm
+ */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+    height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;   
+}
+
+.inplace-help {
+  .visually-hidden;
+}
+
+/** 
+ * Remove max-width from popover; allow it to contain content fully
+ */
+.popover {
+  max-width: none;
+}
