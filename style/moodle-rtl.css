@@ -8448,6 +8448,10 @@ form.popupform div {
   margin-bottom: 0;
 }
 
+.no-overflow>.no-overflow {
+  margin-bottom: 0;
+}
+
 span.hide,
 div.hide {
   display: none;
@@ -11360,7 +11364,7 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 }
 
 .course-content ul li.section.main {
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #eee;
   margin-top: 0;
 }
 
@@ -11381,6 +11385,11 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   padding-bottom: 20px;
 }
 
+.course-content ul.topics li.section .summary--editing,
+.course-content ul.topics li.section .content-toggle {
+  margin-right: 40px;
+}
+
 .course-content ul.section {
   margin: 0;
   margin-bottom: 1em;
@@ -11391,6 +11400,10 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
+}
+
+.course-content ul.topics li.section .content--editing {
+  margin-right: 40px;
 }
 
 .path-course-view .completionprogress {
