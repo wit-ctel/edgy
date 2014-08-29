@@ -318,6 +318,13 @@
             .summary {
                 // margin-left: 25px;
             }
+            
+            /** 
+             * summary variant when in edit mode
+             */
+            .summary--editing, .content-toggle {
+              margin-left: 40px;
+            }
         }
     }
     ul.section {
@@ -326,11 +333,17 @@
     }
     
 }
+
 .course-content ul.topics li.section .content,.course-content ul.weeks li.section .content {
     margin-right: 0;
     margin-left: 0;
     padding: 0;
 }
+
+.course-content ul.topics li.section .content--editing {
+  margin-left: 40px;
+}
+
 .path-course-view {
     .completionprogress {
         margin-left: 25px;
