@@ -85,6 +85,14 @@
                 }
             }
         }
+        
+        /** 
+         * remove bottom margin and rely on trailing margin
+         * of block elements within
+         */
+        .no-overflow {
+          margin-bottom: 0;
+        }
     }
     // Hide the filler, this makes edit buttons jump
     .filler {
@@ -122,6 +130,7 @@
 .section .activity .activityinstance div {
     display: inline-block;
 }
+
 .editing {
     .section {
         .activity {
@@ -150,7 +159,7 @@
         }
         .contentafterlink {
             p {
-                margin: .5em 0;
+                margin: .5em 0 0;
             }
         }
     }
@@ -168,7 +177,6 @@
     }
 }
 .section .activity .availabilityinfo,.section .activity .contentafterlink {
-    margin-top: 0.5em;
     margin-left: 30px;
 }
 .editing .section .activity:hover,.editing .section .activity.action-menu-shown {
