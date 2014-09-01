@@ -7998,7 +7998,7 @@ li.activity.label,
   text-shadow: none;
   padding: 8px;
   white-space: normal;
-  display: inline-block;
+  display: block;
   font-size: inherit;
   line-height: inherit;
 }
@@ -11158,6 +11158,10 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
   filter: alpha(opacity=50);
 }
 
+.section .activity .no-overflow {
+  margin-bottom: 0;
+}
+
 .section .filler {
   display: none;
 }
@@ -11212,7 +11216,7 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 }
 
 .section .activity .contentafterlink p {
-  margin: .5em 0;
+  margin: .5em 0 0;
 }
 
 .section .activity.modtype_label.label {
@@ -11232,7 +11236,6 @@ textarea.path-calendar .maincalendar .cal_courses_flt select {
 
 .section .activity .availabilityinfo,
 .section .activity .contentafterlink {
-  margin-top: 0.5em;
   margin-right: 30px;
 }
 
