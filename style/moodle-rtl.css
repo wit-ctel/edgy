@@ -11659,7 +11659,7 @@ span.editinstructions {
   float: right;
   height: auto;
   margin-left: 10px;
-  max-width: 240px;
+  max-width: 140px;
 }
 
 .coursebox .teachers li {
@@ -12296,7 +12296,8 @@ span.editinstructions {
   float: right;
   height: auto;
   margin-left: 25px;
-  max-width: 240px;
+  margin-bottom: 1em;
+  max-width: 140px;
 }
 
 @media (min-width:1200px) and (max-width:1600px) {
