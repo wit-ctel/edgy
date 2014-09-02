@@ -9906,6 +9906,7 @@ html {
 
 body {
   margin: 0 0 120px;
+  padding-top: 70px;
 }
 
 #page-footer {
@@ -11658,7 +11659,7 @@ span.editinstructions {
   float: right;
   height: auto;
   margin-left: 10px;
-  max-width: 240px;
+  max-width: 140px;
 }
 
 .coursebox .teachers li {
@@ -12287,6 +12288,16 @@ span.editinstructions {
 .course-being-dragged {
   opacity: .5;
   filter: alpha(opacity=50);
+}
+
+.moodleheader .courseimage img {
+  display: block;
+  border-radius: 6px;
+  float: right;
+  height: auto;
+  margin-left: 25px;
+  margin-bottom: 1em;
+  max-width: 140px;
 }
 
 @media (min-width:1200px) and (max-width:1600px) {

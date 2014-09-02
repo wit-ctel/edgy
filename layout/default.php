@@ -55,7 +55,7 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<nav role="navigation" class="<?php echo $settingshtml->navbarclass; ?>">
+<nav role="navigation" class="<?php echo $settingshtml->navbarclass; ?> navbar-fixed-top">
     <div class="<?php echo $settingshtml->containerclass; ?>">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#moodle-navbar">
@@ -83,13 +83,12 @@ echo $OUTPUT->doctype() ?>
           <nav class="breadcrumb-nav" role="navigation" aria-label="breadcrumb"><?php echo $OUTPUT->navbar(); ?></nav>
           <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
       </div>
-
-      <div id="course-header">
-          <?php echo $OUTPUT->course_header(); ?>
-      </div>
   </header>
 
-  <header class="moodleheader">
+  <header class="moodleheader clearfix">
+    <div class="courseimage">
+      <?php echo $OUTPUT->course_header(); ?>
+    </div>
     <?php echo $OUTPUT->page_heading(); ?>
   </header>
 </div>
