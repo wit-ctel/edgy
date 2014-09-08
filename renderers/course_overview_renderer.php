@@ -32,24 +32,22 @@ class theme_edgy_block_course_overview_renderer extends block_course_overview_re
         global $CFG;
       
         $support_courses = array();
-        $registered_courses = array();
-  
-        // split courses into 'support' or 'registered'
-        foreach($courses as $course) {
-        if (preg_match("/^SUPPORT_/", $course->idnumber)) {
-          $support_courses[$course->id] = $course;
-        } else {
-          $registered_courses[$course->id] = $course;
-        }
-        }
-
+        
+        // identify and move support courses into their own array
+        array_walk($courses, function (&$v, $k) use (&$courses, &$support_courses) {
+            if (preg_match("/^SUPPORT_/", $v->idnumber)) {
+                $support_courses[$v->id] = $v;
+                unset($courses[$k]); // remove support course from array
+            }
+        });
+        
         // display 'jump to course' dropdown menu
         $html = html_writer::start_tag('div', array('class'=>'well'));
         $html .= html_writer::start_tag('div', array('class'=>'container-fluid', 'id' => 'quickaccess'));
         $html .= html_writer::start_tag('div', array('class'=>'row'));
         $html .= html_writer::start_tag('div', array('class'=>'col-md-6'));
         $html .= html_writer::tag('h4', 'Jump to a Registered module');
-        $html .= print_goto_course_form($registered_courses, 'go_to_registered_courses', true);
+        $html .= print_goto_course_form($courses, 'go_to_registered_courses', true);
         $html .= html_writer::end_tag('div');
 
         if (count($support_courses) > 0) {
