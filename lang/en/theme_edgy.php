@@ -101,3 +101,5 @@ on the Moodle tracker</p>
 <li><a href="http://theming.sonsbeekmedia.nl/">Theme testing playground </a></li>
 </ul>';
 
+$string['jumptosupportareaprompt'] = '[Choose an area...]';
+$string['jumptomoduleareaprompt'] = '[Choose a module...]';
