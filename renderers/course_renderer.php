@@ -186,7 +186,6 @@ class theme_edgy_core_course_renderer extends core_course_renderer {
             $formid .= $count;
         }
         $inputid = 'coursesearchbox';
-        $inputsize = 30;
 
         if ($format === 'navbar') {
             $formid = 'coursesearchnavbar';
@@ -200,7 +199,7 @@ class theme_edgy_core_course_renderer extends core_course_renderer {
         $output = html_writer::start_tag('form', $form);
         $output .= html_writer::start_div('form-group');
         $output .= html_writer::tag('label', $strsearchcourses, array('for' => $inputid, 'class' => 'sr-only'));
-        $search = array('type' => 'text', 'id' => $inputid, 'size' => $inputsize, 'name' => 'search',
+        $search = array('type' => 'text', 'id' => $inputid, 'name' => 'search',
                         'class' => 'form-control', 'value' => s($value), 'placeholder' => $strsearchcourses);
         $output .= html_writer::empty_tag('input', $search);
         $output .= html_writer::end_div(); // Close form-group.
