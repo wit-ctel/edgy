@@ -33,13 +33,12 @@ class theme_edgy_block_course_overview_renderer extends block_course_overview_re
       
         $support_courses = array();
         
-        // identify and move support courses into their own array
-        array_walk($courses, function (&$v, $k) use (&$courses, &$support_courses) {
-            if (preg_match("/^SUPPORT_/", $v->idnumber)) {
-                $support_courses[$v->id] = $v;
-                unset($courses[$k]); // remove support course from array
-            }
-        });
+        foreach ($courses as $key => $course) {
+            if (preg_match("/^SUPPORT_/", $course->idnumber)) {
+                $support_courses[$course->id] = $course;
+                unset($courses[$key]); // remove support course from array
+            }    
+        }
         
         // display 'jump to course' dropdown menu
         $html = html_writer::start_tag('div', array('class'=>'well'));
