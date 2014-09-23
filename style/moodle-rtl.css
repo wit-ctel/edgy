@@ -11654,14 +11654,6 @@ span.editinstructions {
   position: relative;
 }
 
-.coursebox .courseimage img {
-  border-radius: 6px;
-  float: right;
-  height: auto;
-  margin-left: 10px;
-  max-width: 140px;
-}
-
 .coursebox .teachers li {
   list-style-type: none;
   padding: 0;
@@ -12290,14 +12282,23 @@ span.editinstructions {
   filter: alpha(opacity=50);
 }
 
-.moodleheader .courseimage img {
-  display: block;
-  border-radius: 6px;
-  float: right;
-  height: auto;
+.moodleheader .course-image {
   margin-left: 25px;
   margin-bottom: 1em;
+}
+
+.course-image {
+  border-radius: 6px;
+  display: block;
+  float: right;
+  height: auto;
+  max-height: 105px;
   max-width: 140px;
+}
+
+.course-image--small {
+  max-width: 110px;
+  max-height: 85px;
 }
 
 @media (min-width:1200px) and (max-width:1600px) {
@@ -16955,6 +16956,11 @@ textarea.searchform input[type="text"] {
 .block_settings .block_tree {
   margin-right: 0;
   margin-left: 0;
+}
+
+.block_course_overview .coursebox {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .mform .fcontainer .fitem .fitemtitle,

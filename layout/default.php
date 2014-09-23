@@ -86,9 +86,7 @@ echo $OUTPUT->doctype() ?>
   </header>
 
   <header class="moodleheader clearfix">
-    <div class="courseimage">
-      <?php echo $OUTPUT->course_header(); ?>
-    </div>
+    <?php echo $OUTPUT->course_header(); ?>
     <?php echo $OUTPUT->page_heading(); ?>
   </header>
 </div>
