@@ -148,8 +148,8 @@ class theme_edgy_block_course_overview_renderer extends block_course_overview_re
           $html .= html_writer::link($courseurl, 
                                       html_writer::empty_tag('img', array('src' => $url, 
                                                              'alt' => 'Course Image', 
-                                                             'class' => 'media-object course-image')),
-                                      array('class' => 'pull-left courseimage'));
+                                                             'class' => 'media-object course-image course-image--small')),
+                                      array('class' => 'pull-left'));
           
           $html .= $this->output->box('', 'flush');
           $html .= html_writer::end_tag('div');

@@ -86,9 +86,7 @@ echo $OUTPUT->doctype() ?>
   </header>
 
   <header class="moodleheader clearfix">
-    <div class="courseimage">
-      <?php echo $OUTPUT->course_header(); ?>
-    </div>
+    <?php echo $OUTPUT->course_header(); ?>
     <?php echo $OUTPUT->page_heading(); ?>
   </header>
 </div>
@@ -153,8 +151,6 @@ echo $OUTPUT->doctype() ?>
       <ul class="footer-nav">
         <li><a href="http://elearning.wit.ie/support">Help</a></li>
         <li><a href="http://docs.moodle.org">Moodle.org Docs</a></li>
-        <li><a href="/">Privacy Policy</a></li>
-        <li><a href="/">Terms of Use</a></li>
         <li><a href="http://elearning.wit.ie/about">Contact Us</a></li>
       </ul>
     </nav>

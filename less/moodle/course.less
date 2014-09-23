@@ -524,13 +524,7 @@ span.editinstructions {
 
 .coursebox {
     position: relative;
-    .courseimage img {
-        .img-rounded;
-        float: left;
-        height: auto;
-        margin-right: 10px;
-        max-width: 140px;
-    }
+    
     .teachers {
         li {
             list-style-type:none;
@@ -1185,16 +1179,31 @@ span.editinstructions {
 
 .moodleheader { 
   
-  .courseimage img {
-    display: block;
-    border-radius: 6px;
-    float: left;
-    height: auto;
+  .course-image {
     margin-right: 25px;
     margin-bottom: 1em;
-    max-width: 140px;
+    
   }
 }
+
+/** 
+ * Course image base style
+ */
+
+.course-image {
+    .img-rounded;
+    display: block;
+    float: left;
+    height: auto;
+    max-height: 105px;
+    max-width: 140px;
+}
+
+.course-image--small {
+  max-width: 110px;
+  max-height: 85px;
+}
+
 
 /**
  * Display sizes:

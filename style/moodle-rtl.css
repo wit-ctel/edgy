@@ -1753,38 +1753,38 @@ pre code {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:768px) {
   .container {
-    width: 770px;
+    width: 760px;
   }
 }
 
 @media (min-width:992px) {
   .container {
-    width: 990px;
+    width: 980px;
   }
 }
 
 @media (min-width:1200px) {
   .container {
-    width: 1190px;
+    width: 1180px;
   }
 }
 
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .row {
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .col-xs-1,
@@ -1837,8 +1837,8 @@ pre code {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .col-xs-1,
@@ -3489,8 +3489,8 @@ select[multiple].input-lg {
 .mform .fcontainer .fitem,
 .mform fieldset .fitem,
 .form-item {
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 @media (min-width:768px) {
@@ -3503,7 +3503,7 @@ select[multiple].input-lg {
 
 .form-horizontal .has-feedback .form-control-feedback {
   top: 0;
-  left: 25px;
+  left: 20px;
 }
 
 @media (min-width:768px) {
@@ -4836,8 +4836,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-collapse {
   overflow-x: visible;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
   -webkit-overflow-scrolling: touch;
@@ -4889,8 +4889,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .container-fluid>.navbar-header,
 .container>.navbar-collapse,
 .container-fluid>.navbar-collapse {
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 @media (min-width:768px) {
@@ -4944,7 +4944,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-brand {
   float: right;
-  padding: 15px 25px;
+  padding: 15px 20px;
   font-size: 18px;
   line-height: 20px;
   height: 50px;
@@ -4958,14 +4958,14 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 @media (min-width:768px) {
   .navbar>.container .navbar-brand,
   .navbar>.container-fluid .navbar-brand {
-    margin-right: -25px;
+    margin-right: -20px;
   }
 }
 
 .navbar-toggle {
   position: relative;
   float: left;
-  margin-left: 25px;
+  margin-left: 20px;
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -4997,7 +4997,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-nav {
-  margin: 7.5px -25px;
+  margin: 7.5px -20px;
 }
 
 .navbar-nav>li>a {
@@ -5048,7 +5048,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   }
 
   .navbar-nav.navbar-right:last-child {
-    margin-left: -25px;
+    margin-left: -20px;
   }
 }
 
@@ -5063,9 +5063,9 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-form {
-  margin-right: -25px;
-  margin-left: -25px;
-  padding: 10px 25px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 10px 20px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 1px 0 rgba(255,255,255,0.1);
@@ -5150,7 +5150,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   }
 
   .navbar-form.navbar-right:last-child {
-    margin-left: -25px;
+    margin-left: -20px;
   }
 }
 
@@ -5188,8 +5188,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 @media (min-width:768px) {
   .navbar-text {
     float: right;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .navbar-text.navbar-right:last-child {
@@ -8059,8 +8059,8 @@ img.icon.hide {
 .editing.used-region-side-post.used-region-side-pre #region-main {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:768px) {
@@ -8092,8 +8092,8 @@ img.icon.hide {
 .editing.used-region-side-post.used-region-side-pre #block-region-side-post {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   min-height: 100px;
 }
 
@@ -8114,8 +8114,8 @@ img.icon.hide {
 .editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   min-height: 100px;
 }
 
@@ -9922,9 +9922,9 @@ body {
   border-left: 2px solid #eee;
 }
 
-@media (min-width:1200px) {
+@media (min-width:768px) {
   #block-region-side-pre {
-    font-size: 90%;
+    font-size: 0.92857em;
   }
 }
 
@@ -11654,14 +11654,6 @@ span.editinstructions {
   position: relative;
 }
 
-.coursebox .courseimage img {
-  border-radius: 6px;
-  float: right;
-  height: auto;
-  margin-left: 10px;
-  max-width: 140px;
-}
-
 .coursebox .teachers li {
   list-style-type: none;
   padding: 0;
@@ -12290,14 +12282,23 @@ span.editinstructions {
   filter: alpha(opacity=50);
 }
 
-.moodleheader .courseimage img {
-  display: block;
-  border-radius: 6px;
-  float: right;
-  height: auto;
+.moodleheader .course-image {
   margin-left: 25px;
   margin-bottom: 1em;
+}
+
+.course-image {
+  border-radius: 6px;
+  display: block;
+  float: right;
+  height: auto;
+  max-height: 105px;
   max-width: 140px;
+}
+
+.course-image--small {
+  max-width: 110px;
+  max-height: 85px;
 }
 
 @media (min-width:1200px) and (max-width:1600px) {
@@ -13752,8 +13753,8 @@ textarea.box.message .message_form input[type="text"] {
 }
 
 .box.message .contactselector form#usergroupform fieldset {
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -13766,8 +13767,8 @@ textarea.box.message .message_form input[type="text"] {
 .box.message .contactselector form#usergroupform fieldset label {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   display: block !important;
 }
 
@@ -13781,8 +13782,8 @@ textarea.box.message .message_form input[type="text"] {
 .box.message .contactselector form#usergroupform fieldset select {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   float: right;
   display: block;
   width: 100%;
@@ -14321,15 +14322,15 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
 }
 
 .box.message .messagearea .messagehistory .messagehistory .mdl-left {
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .box.message .messagearea .messagehistory .messagehistory .mdl-left.left .message {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -14346,8 +14347,8 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
 .box.message .messagearea .messagehistory .messagehistory .mdl-left.right .message {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -14380,8 +14381,8 @@ textarea.box.message .contactselector form#usergroupform fieldset select {
 .box.message .messagearea .messagehistory .box.center table.message_user_pictures {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   float: none !important;
 }
 
@@ -15841,15 +15842,15 @@ a#hidebankcmd {
 }
 
 .userprofile .userprofilebox {
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .userprofile .userprofilebox .profilepicture {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -15871,8 +15872,8 @@ a#hidebankcmd {
 .userprofile .userprofilebox .descriptionbox {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -15924,8 +15925,8 @@ a#hidebankcmd {
 .loginbox.twocolumns .loginpanel {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:768px) {
@@ -15957,8 +15958,8 @@ a#hidebankcmd {
 .loginbox.twocolumns .signuppanel {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:768px) {
@@ -16692,7 +16693,7 @@ ol {
 }
 
 .block .content {
-  padding: 4px 15px;
+  padding: 4px 0;
 }
 
 .block .content hr {
@@ -16952,12 +16953,22 @@ textarea.searchform input[type="text"] {
   background-color: #d7ecf7;
 }
 
+.block_settings .block_tree {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.block_course_overview .coursebox {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .mform .fcontainer .fitem .fitemtitle,
 .mform fieldset .fitem .fitemtitle {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -16998,8 +17009,8 @@ textarea.searchform input[type="text"] {
 
 .mform .fcontainer .fitem .fitemtitle label .form-group,
 .mform fieldset .fitem .fitemtitle label .form-group {
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 @media (min-width:768px) {
@@ -17014,7 +17025,7 @@ textarea.searchform input[type="text"] {
 .mform .fcontainer .fitem .fitemtitle label .has-feedback .form-control-feedback,
 .mform fieldset .fitem .fitemtitle label .has-feedback .form-control-feedback {
   top: 0;
-  left: 25px;
+  left: 20px;
 }
 
 @media (min-width:768px) {
@@ -17035,8 +17046,8 @@ textarea.searchform input[type="text"] {
 .mform fieldset .fitem .felement {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -17202,15 +17213,15 @@ textarea.mform fieldset .fitem .felement input[type="password"] {
 
 .mform .fitem_actionbuttons {
   margin-bottom: 15px;
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .mform .fitem_actionbuttons>div.felement {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -17298,8 +17309,8 @@ textarea.mform fieldset .fitem .felement input[type="password"] {
 .form-item .form-label {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -17324,8 +17335,8 @@ textarea.mform fieldset .fitem .felement input[type="password"] {
 }
 
 .form-item .form-label label .form-group {
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 @media (min-width:768px) {
@@ -17338,7 +17349,7 @@ textarea.mform fieldset .fitem .felement input[type="password"] {
 
 .form-item .form-label label .has-feedback .form-control-feedback {
   top: 0;
-  left: 25px;
+  left: 20px;
 }
 
 @media (min-width:768px) {
@@ -17356,8 +17367,8 @@ textarea.mform fieldset .fitem .felement input[type="password"] {
 .form-item .form-setting {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -17448,8 +17459,8 @@ textarea.form-item .form-setting input[type="password"] {
 .form-item .form-description {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   clear: right;
   margin-bottom: 0;
 }
@@ -17471,8 +17482,8 @@ textarea.form-item .form-setting input[type="password"] {
 .form-buttons {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: -15px;
   margin-bottom: 15px;
 }
@@ -18029,8 +18040,8 @@ div#dock {
 }
 
 .path-backup .mform .grouped_settings {
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .path-backup .mform .grouped_settings.section_level {
@@ -18060,8 +18071,8 @@ div#dock {
 .path-backup .mform .grouped_settings .include_setting {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -18074,8 +18085,8 @@ div#dock {
 .path-backup .mform .grouped_settings .normal_setting {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -18086,16 +18097,16 @@ div#dock {
 }
 
 .path-backup .mform .grouped_settings .fitem {
-  margin-right: -25px;
-  margin-left: -25px;
+  margin-right: -20px;
+  margin-left: -20px;
   margin-bottom: 15px;
 }
 
 .path-backup .mform .grouped_settings .fitem .fitemtitle {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:768px) {
@@ -18115,8 +18126,8 @@ div#dock {
 .path-backup .mform .grouped_settings .fitem .felement {
   position: relative;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width:768px) {
