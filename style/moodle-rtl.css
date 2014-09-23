@@ -16963,6 +16963,10 @@ textarea.searchform input[type="text"] {
   padding-left: 0;
 }
 
+.block_online_users .list {
+  margin-right: 0;
+}
+
 .mform .fcontainer .fitem .fitemtitle,
 .mform fieldset .fitem .fitemtitle {
   position: relative;
