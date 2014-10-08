@@ -7399,6 +7399,8 @@ button.close {
 .box.message .messagearea .messagehistory .messagehistory .mdl-left:after,
 .userprofile .userprofilebox:before,
 .userprofile .userprofilebox:after,
+.loginbox.twocolumns:before,
+.loginbox.twocolumns:after,
 .mform .fcontainer .fitem .fitemtitle label .form-group:before,
 .mform .fcontainer .fitem .fitemtitle label .form-group:after,
 .mform fieldset .fitem .fitemtitle label .form-group:before,
@@ -7439,6 +7441,7 @@ button.close {
 .box.message .contactselector form#usergroupform fieldset:after,
 .box.message .messagearea .messagehistory .messagehistory .mdl-left:after,
 .userprofile .userprofilebox:after,
+.loginbox.twocolumns:after,
 .mform .fcontainer .fitem .fitemtitle label .form-group:after,
 .mform fieldset .fitem .fitemtitle label .form-group:after,
 .mform .fitem_actionbuttons:after,
@@ -7944,23 +7947,6 @@ a:focus {
   background-color: transparent;
   padding-right: 0;
   font-size: 13px;
-}
-
-.footer-nav {
-  list-style: none;
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.footer-nav>li {
-  margin-right: 1em;
-}
-
-.footer-nav>li,
-.footer-nav>li>a {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
 }
 
 .panel-primary .panel-title {
@@ -9899,25 +9885,6 @@ ul.dragdrop-keyboard-drag li {
   margin-bottom: 3em;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin: 0 0 120px;
-  padding-top: 70px;
-}
-
-#page-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 120px;
-  width: 100%;
-  background-color: #fff;
-}
-
 #block-region-side-pre {
   border-left: 2px solid #eee;
 }
@@ -9926,6 +9893,11 @@ body {
   #block-region-side-pre {
     font-size: 0.92857em;
   }
+}
+
+.col-centered {
+  margin: 0 auto;
+  float: none;
 }
 
 .path-admin .incompatibleblockstable td.c0 {
@@ -15897,7 +15869,7 @@ a#hidebankcmd {
   margin-top: 2em;
 }
 
-.loginbox .loginpanel {
+.loginbox .loginpanel .loginsub {
   background-color: #fff;
   background-color: rgba(255,255,255,0.7);
   border-radius: 4px;
@@ -15910,6 +15882,14 @@ a#hidebankcmd {
 
 .loginbox .loginpanel h2 {
   margin-top: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .loginbox .signuppanel h2,
@@ -15920,6 +15900,11 @@ a#hidebankcmd {
 
 .loginbox .support {
   color: #f2a96e;
+}
+
+.loginbox.twocolumns {
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .loginbox.twocolumns .loginpanel {
@@ -17911,20 +17896,6 @@ div#dock {
   text-align: center;
 }
 
-.pre-footer {
-  background-color: #eee;
-  padding: 3em 0;
-  box-shadow: 0 0 4px rgba(0,0,0,0.3) inset;
-}
-
-#page-footer {
-  padding: 0.8em 0;
-}
-
-.footer-inner {
-  display: table;
-}
-
 .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax {
   background-color: #fff;
 }
@@ -19494,6 +19465,117 @@ input.fp-btn-choose {
   text-align: right;
 }
 
+.footer-nav {
+  list-style: none;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 0;
+}
+
+.footer-nav>li {
+  margin-right: 1em;
+}
+
+.footer-nav>li,
+.footer-nav>li>a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.footer-nav>li:first-child {
+  margin-right: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px;
+  padding-top: 70px;
+}
+
+#page-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.pre-footer {
+  background-color: #eee;
+  padding: 3em 0;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3) inset;
+}
+
+.footer-inner {
+  margin-top: 0.5em;
+  display: table;
+}
+
+.announcement {
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+  margin-bottom: 2em;
+}
+
+.announcement>header {
+  background-color: #eee;
+  border-right: 10px solid #c66a19;
+  padding: 0.5em 1em;
+}
+
+.announcement__title {
+  display: inline-block;
+  font-size: 17px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.announcement__more {
+  font-size: 14px;
+  font-style: italic;
+  margin-right: 1em;
+}
+
+.announcement__link {
+  color: #c66a19;
+}
+
+.announcement__link:hover,
+.announcement__link:focus {
+  color: #904d12;
+}
+
+.announcement__meta {
+  margin: 0;
+  font-size: 11px;
+  color: #4a4a4a;
+}
+
+.announcement__body {
+  background-color: #fff;
+  border-right: 10px solid #fff;
+  padding: 0.5em 1em;
+}
+
+@media (min-width:768px) {
+  body {
+    margin-bottom: 71px;
+  }
+
+  #page-footer {
+    height: 71px;
+  }
+
+  .footer-section {
+    text-align: right;
+  }
+}
+
 .userenrolment {
   width: 100%;
   border-collapse: collapse;
@@ -19896,15 +19978,6 @@ input.fp-btn-choose {
 }
 
 @media (min-width:768px) {
-  body {
-    margin-bottom: 90px;
-  }
-
-  #page-footer {
-    height: 90px;
-    text-align: right;
-  }
-
   #page-footer nav {
     display: table-cell;
     vertical-align: middle;
