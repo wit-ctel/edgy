@@ -1,3 +1,19 @@
+var edgy = edgy || {};
+
+/** 
+ * basic querystring function for extracting query params
+ */
+edgy.qs = function(key) {
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars[key];
+}
 
 $(function(){ 
   
@@ -30,15 +46,24 @@ $(function(){
       
    var section = $(location).attr('hash');
    
-   // reveal topic content and scroll to topic if it appears in url
+   // attempt to extract section from querystring
+   if (!section || 0 === section.length) {
+     if (edgy.qs('section')) {
+        section = '#section-' + edgy.qs('section');
+     }
+   }
+   
+   // reveal topic content and scroll to topic if there is a section present
    if (section) {
      $(section + " .content--editing")
        .collapse('show');
-      
-     $(section)   
+       
+     var scrollpos = $(section).offset().top - $('nav[role="navigation"]').filter(':first').height(); 
+     
+     $('body')   
        .animate({
-               scrollTop: $(section).offset().top
-           }, 1000);
+           scrollTop: scrollpos
+           }, 500);
    }    
 
    // identify .inplace-help instances and convert them to popovers 
