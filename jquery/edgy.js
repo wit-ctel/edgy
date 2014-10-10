@@ -46,7 +46,12 @@ $(function(){
       
    var section = $(location).attr('hash');
    
-   // reveal topic content and scroll to topic if it appears in url
+   // attempt to extract section from querystring
+   if (!section || 0 === section.length) {
+     if (edgy.qs('section')) {
+        section = '#section-' + edgy.qs('section');
+     }
+   }
    if (section) {
      $(section + " .content--editing")
        .collapse('show');
