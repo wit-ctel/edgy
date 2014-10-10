@@ -52,14 +52,18 @@ $(function(){
         section = '#section-' + edgy.qs('section');
      }
    }
+   
+   // reveal topic content and scroll to topic if there is a section present
    if (section) {
      $(section + " .content--editing")
        .collapse('show');
-      
-     $(section)   
+       
+     var scrollpos = $(section).offset().top - $('nav[role="navigation"]').filter(':first').height(); 
+     
+     $('body')   
        .animate({
-               scrollTop: $(section).offset().top
-           }, 1000);
+           scrollTop: scrollpos
+           }, 500);
    }    
 
    // identify .inplace-help instances and convert them to popovers 
