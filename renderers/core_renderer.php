@@ -133,6 +133,12 @@ class theme_edgy_core_renderer extends core_renderer {
                     get_string('editmyprofile')
                 );
                 
+                $usermenu->add(
+                    '<span class="glyphicon glyphicon-envelope"></span>' . get_string('messages', 'message'),
+                    new moodle_url('/message/index.php', array('user1' => $USER->id, 'viewing' => 'recentconversations')),
+                    get_string('editmyprofile')
+                );
+                
                 // better UX to have logout as last menu item
                 $usermenu->add(
                     '<span class="glyphicon glyphicon-off"></span>' . get_string('logout'),
