@@ -54,7 +54,8 @@ echo $OUTPUT->doctype() ?>
             <small class="image-attribution">&copy; Image courtesy of Terry Murphy Photography</small>
           </div>
           
-          <?php 
+          <?php
+              /* 
                 require_once($CFG->dirroot .'/mod/forum/lib.php');
 
                 // need to login 'guest' user to view news items
@@ -97,6 +98,7 @@ echo $OUTPUT->doctype() ?>
           
                   echo html_writer::end_tag('div');
                 }
+              */
               ?>
       
       </div>
