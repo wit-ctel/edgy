@@ -8,3 +8,16 @@
     display: inline;
     margin: 0 5px 0 0;
 }
+
+/**
+ * Fix row alignment mis-match in Grader report view
+ * 
+ * 1. avoid increasing height of cell by floating grade tools 
+ *    
+ * 2. hack to improve the row alignment when additional
+ *    borders/padding are added to rows above
+ */
+.path-grade-report-grader .grade_icons {
+  float: right; /* [1] */
+  margin-bottom: -0.3em; /* [2] */
+}
