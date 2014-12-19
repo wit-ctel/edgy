@@ -9895,11 +9895,6 @@ ul.dragdrop-keyboard-drag li {
   }
 }
 
-.col-centered {
-  margin: 0 auto;
-  float: none;
-}
-
 .path-admin .incompatibleblockstable td.c0 {
   font-weight: bold;
 }
@@ -18012,6 +18007,11 @@ div#dock {
 #page-report-participation-index .participationselectform div label {
   display: inline;
   margin: 0 0 0 5px;
+}
+
+.path-grade-report-grader .grade_icons {
+  float: left;
+  margin-bottom: -0.3em;
 }
 
 .path-backup .mform .grouped_settings {
