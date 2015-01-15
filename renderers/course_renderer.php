@@ -128,7 +128,7 @@ class theme_edgy_core_course_renderer extends core_course_renderer {
                     $file->get_filearea(). $file->get_filepath(). $file->get_filename(), !$isimage);
             if ($isimage) {
                 $contentimages .= html_writer::tag('div',
-                        html_writer::empty_tag('img', array('src' => $url, 'class' => 'course-image course-image--small', 'alt' => 'Course Image '. $course->fullname)),
+                        html_writer::empty_tag('img', array('src' => $url, 'class' => 'course-image', 'alt' => 'Course Image '. $course->fullname)),
                         array('class' => 'courseimage'));
             } else {
                 $image = $this->output->pix_icon(file_file_icon($file, 24), $file->get_filename(), 'moodle');
