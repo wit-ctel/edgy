@@ -8825,8 +8825,6 @@ a.skip:active {
 
 .mod-indent-outer {
   display: table;
-  table-layout: fixed;
-  width: 100%;
 }
 
 .mod-indent {
