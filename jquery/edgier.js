@@ -1,4 +1,3 @@
-
 $(function(){ 
   
   // identify .inplace-help instances and convert them to popovers 

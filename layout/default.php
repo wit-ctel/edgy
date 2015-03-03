@@ -31,7 +31,7 @@ $regions = edgy_grid($hassidepre, $hassidepost);
 $PAGE->set_popup_notification_allowed(false);
 $PAGE->requires->jquery();
 $PAGE->requires->jquery_plugin('bootstrap', 'theme_edgy');
-$PAGE->requires->jquery_plugin('edgy', 'theme_edgy');
+$PAGE->requires->jquery_plugin('edgier', 'theme_edgy');
 
 $settingshtml = theme_edgy_html_for_settings($PAGE);
 
