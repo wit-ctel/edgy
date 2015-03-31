@@ -26,39 +26,57 @@
 
 $regions = edgy_grid(false, false);
 
+$PAGE->set_popup_notification_allowed(false);
+$PAGE->requires->jquery();
+$PAGE->requires->jquery_plugin('bootstrap', 'theme_edgy');
+$PAGE->requires->jquery_plugin('edgier', 'theme_edgy');
+
+$settingshtml = theme_edgy_html_for_settings($PAGE);
+
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
-<head>
+  <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
+    <?php echo $settingshtml->brandfontlink; ?>
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
-</head>
+  </head>
 
-<body <?php echo $OUTPUT->body_attributes(); ?>>
+  <body <?php echo $OUTPUT->body_attributes(); ?>>
 
-<?php echo $OUTPUT->standard_top_of_body_html() ?>
+    <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<div id="page" class="container-fluid">
+    <div id="page" class="container">
 
-    <header id="page-header" class="clearfix">
-        <?php echo $OUTPUT->page_heading(); ?>
-    </header>
-
-    <div id="page-content" class="row">
-        <section id="region-main" class="<?php echo $regions['content']; ?>">
-            <?php echo $OUTPUT->main_content(); ?>
-        </section>
-    </div>
-
+      <div id="page-content" class="row">
+        <div id="region-main" class="<?php echo $regions['content']; ?>">
+          <?php echo $OUTPUT->main_content(); ?>
+          <small class="image-attribution">&copy; Image courtesy of Terry Murphy Photography</small>
+        </div>
+      </div>
+  
+    </div> <!-- end #page -->
+  
     <footer id="page-footer">
-        <?php
-        echo $OUTPUT->standard_footer_html();
-        ?>
+      <section class="footer-section">
+        <div class="container footer-inner">
+          <a title="go to Waterford Institute of Technology homepage" class="logo site-brand__logo" href="http://wit.ie/">
+            <img src="<?php echo $OUTPUT->pix_url('brand-logo', 'theme'); ?>" alt="Waterford Institute of Technology" />
+          </a>
+
+        <nav>
+          <ul class="footer-nav">
+            <li><a href="http://elearning.wit.ie/support">Help</a></li>
+            <li><a href="http://docs.moodle.org">Moodle.org Docs</a></li>
+            <li><a href="http://elearning.wit.ie/about">Contact Us</a></li>
+           </ul>
+         </nav>
+         </div>
+       </section>
     </footer>
 
-    <?php echo $OUTPUT->standard_end_of_body_html() ?>
+  <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
-</div>
-</body>
+  </body>
 </html>

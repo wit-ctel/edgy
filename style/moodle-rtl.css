@@ -19964,14 +19964,16 @@ body {
 }
 
 @media (min-width:768px) {
-  body#page-login-index {
+  body#page-login-index,
+  body#page-maintenance-message {
     background: url([[pix:theme|home/background-sm]]) no-repeat center center fixed;
     background-size: cover;
   }
 }
 
 @media (min-width:1200px) {
-  body#page-login-index {
+  body#page-login-index,
+  body#page-maintenance-message {
     background: url([[pix:theme|home/background-lg]]) no-repeat center center fixed;
     background-size: cover;
   }
@@ -20085,6 +20087,11 @@ body {
 #page-footer .purgecaches,
 #page-footer .performanceinfo {
   text-align: center;
+}
+
+body#page-maintenance-message {
+  background: url([[pix:theme|home/background-xs]]) no-repeat center center fixed;
+  background-size: cover;
 }
 
 html[data-useragent*='rv:11.0'] {
