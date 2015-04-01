@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2015033100; // YYYYMMDDRR.XX
+$plugin->version   = 2015040100; // YYYYMMDDRR.XX
 $plugin->requires  = 2013110500;
 $plugin->maturity  = MATURITY_BETA;
-$plugin->release   = 'v0.2.7';
+$plugin->release   = 'v0.2.8';
 $plugin->component = 'theme_edgy';

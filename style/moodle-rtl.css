@@ -16067,6 +16067,7 @@ textarea.loginbox .loginform .form-input input[type="password"] {
 .image-attribution {
   color: #fff;
   float: left;
+  margin-top: 18px;
 }
 
 body#page-login-index {
@@ -19576,6 +19577,27 @@ body {
   }
 }
 
+body#page-maintenance-message {
+  background: url([[pix:theme|home/background-xs]]) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.path-maintenance h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.maintenance_message {
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+  padding: 18px;
+  border-color: #eee;
+  border-style: solid;
+  border-width: 1px 0 0 1px;
+}
+
 .userenrolment {
   width: 100%;
   border-collapse: collapse;
@@ -20087,11 +20109,6 @@ body {
 #page-footer .purgecaches,
 #page-footer .performanceinfo {
   text-align: center;
-}
-
-body#page-maintenance-message {
-  background: url([[pix:theme|home/background-xs]]) no-repeat center center fixed;
-  background-size: cover;
 }
 
 html[data-useragent*='rv:11.0'] {
