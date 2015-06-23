@@ -91,8 +91,7 @@ class theme_edgy_core_renderer extends core_renderer {
         return $content.'</ul>';
     }
 
-    public function user_menu() {
-        global $CFG;
+    public function user_menu($user = null, $withlinks = null) {
         $usermenu = new custom_menu('', current_language());
         return $this->render_user_menu($usermenu);
     }
