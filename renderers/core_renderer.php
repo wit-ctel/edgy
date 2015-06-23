@@ -57,6 +57,10 @@ class theme_edgy_core_renderer extends core_renderer {
     }
 
     public function navbar() {
+        $items = $this->page->navbar->get_items();
+        if (empty($items)) { // MDL-46107.
+            return '';
+        }
         $breadcrumbs = '';
         foreach ($this->page->navbar->get_items() as $item) {
             $item->hideicon = true;
