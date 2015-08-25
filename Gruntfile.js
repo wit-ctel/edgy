@@ -329,6 +329,16 @@ module.exports = function(grunt) {
                         to: 'glyphicons-halflings-regular.woff]]',
                     }]
             }
+        },
+        uglify: {
+          options: {
+            compress: true
+          },
+          js: {
+            files: {
+              'jquery/edgier.min.js' : ['jquery/edgier.js']
+            }
+          }
         }
     });
 
@@ -406,7 +416,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-text-replace");
     grunt.loadNpmTasks("grunt-css-flip");
     grunt.loadNpmTasks('grunt-contrib-copy');
-
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    
     // Register tasks.
     grunt.registerTask("default", ["watch"]);
     grunt.registerTask("decache", ["exec:decache"]);
