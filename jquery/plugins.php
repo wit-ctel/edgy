@@ -24,6 +24,6 @@
  */
 
 $plugins = array(
-    'bootstrap' => array('files' => array('bootstrap.js')),
-    'edgier' => array('files' => array('edgier.js')),
+    'bootstrap' => array('files' => array('bootstrap.min.js')),
+    'edgier' => array('files' => array('edgier.min.js')),
 );

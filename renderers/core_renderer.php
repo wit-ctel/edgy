@@ -57,6 +57,10 @@ class theme_edgy_core_renderer extends core_renderer {
     }
 
     public function navbar() {
+        $items = $this->page->navbar->get_items();
+        if (empty($items)) { // MDL-46107.
+            return '';
+        }
         $breadcrumbs = '';
         foreach ($this->page->navbar->get_items() as $item) {
             $item->hideicon = true;
@@ -91,8 +95,7 @@ class theme_edgy_core_renderer extends core_renderer {
         return $content.'</ul>';
     }
 
-    public function user_menu() {
-        global $CFG;
+    public function user_menu($user = null, $withlinks = null) {
         $usermenu = new custom_menu('', current_language());
         return $this->render_user_menu($usermenu);
     }
@@ -129,7 +132,7 @@ class theme_edgy_core_renderer extends core_renderer {
 
                 $usermenu->add(
                     '<span class="glyphicon glyphicon-cog"></span>' . get_string('editmyprofile'),
-                    new moodle_url('/user/edit.php', array('id' => $USER->id)),
+                    new moodle_url('/user/editadvanced.php', array('id' => $USER->id)),
                     get_string('editmyprofile')
                 );
                 
