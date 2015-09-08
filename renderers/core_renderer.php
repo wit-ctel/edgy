@@ -132,7 +132,7 @@ class theme_edgy_core_renderer extends core_renderer {
 
                 $usermenu->add(
                     '<span class="glyphicon glyphicon-cog"></span>' . get_string('editmyprofile'),
-                    new moodle_url('/user/edit.php', array('id' => $USER->id)),
+                    new moodle_url('/user/editadvanced.php', array('id' => $USER->id)),
                     get_string('editmyprofile')
                 );
                 
