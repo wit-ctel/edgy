@@ -101,7 +101,7 @@ class theme_edgy_core_renderer extends core_renderer {
     }
 
     protected function render_user_menu(custom_menu $menu) {
-        global $CFG, $USER, $DB;
+        global $CFG, $USER, $DB, $SITE;
 
         $addusermenu = true;
         $addlangmenu = true;
@@ -132,8 +132,14 @@ class theme_edgy_core_renderer extends core_renderer {
 
                 $usermenu->add(
                     '<span class="glyphicon glyphicon-cog"></span>' . get_string('editmyprofile'),
-                    new moodle_url('/user/editadvanced.php', array('id' => $USER->id)),
+                    new moodle_url('/user/edit.php', array('id' => $USER->id)),
                     get_string('editmyprofile')
+                );
+                
+                $usermenu->add(
+                    '<span class="glyphicon glyphicon-asterisk"></span>' . get_string('changepassword'),
+                    new moodle_url('/login/change_password.php', array('id' => $SITE->id)),
+                    get_string('changepassword')
                 );
                 
                 $usermenu->add(
