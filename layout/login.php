@@ -54,6 +54,18 @@ echo $OUTPUT->doctype() ?>
             <small class="image-attribution">&copy; Image courtesy of Terry Murphy Photography</small>
           </div>
           
+          <div class="clearfix col-md-4">
+            <div style="border: 0; background-color: #000" class="panel panel-default">
+                <div class="panel-body">
+                    <h3 style="color: gold;" class="text-center">September is <strong>Childhood Cancer Awareness Month</strong></h3>
+                    <img style="display: block; margin: 0 auto;" src="<?php echo $OUTPUT->pix_url('childhood-cancer-awareness/light-it-up-horizontal', 'theme'); ?>" alt="Light it up gold for Childhood Cancer Awareness" />
+                    
+                </div>    
+            </div>                
+          </div>
+          
+          
+          
           <?php
               /* 
                 require_once($CFG->dirroot .'/mod/forum/lib.php');
