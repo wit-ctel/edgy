@@ -16071,7 +16071,7 @@ textarea.loginbox .loginform .form-input input[type="password"] {
 }
 
 body#page-login-index {
-  background: url([[pix:theme|home/background-xs]]) no-repeat center center fixed;
+  background: url([[pix:theme|childhood-cancer-awareness/background-xs]]) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -19988,7 +19988,7 @@ body#page-maintenance-message {
 @media (min-width:768px) {
   body#page-login-index,
   body#page-maintenance-message {
-    background: url([[pix:theme|home/background-sm]]) no-repeat center center fixed;
+    background: url([[pix:theme|childhood-cancer-awareness/background-sm]]) no-repeat center center fixed;
     background-size: cover;
   }
 }
@@ -19996,7 +19996,7 @@ body#page-maintenance-message {
 @media (min-width:1200px) {
   body#page-login-index,
   body#page-maintenance-message {
-    background: url([[pix:theme|home/background-lg]]) no-repeat center center fixed;
+    background: url([[pix:theme|childhood-cancer-awareness/background-lg]]) no-repeat center center fixed;
     background-size: cover;
   }
 }
