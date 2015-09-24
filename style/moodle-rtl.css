@@ -19468,7 +19468,7 @@ input.fp-btn-choose {
 
 .footer-nav {
   list-style: none;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   margin-right: 0;
 }
@@ -19494,7 +19494,7 @@ html {
 }
 
 body {
-  margin: 0 0 100px;
+  margin: 0 0 130px;
   padding-top: 70px;
 }
 
@@ -19502,7 +19502,7 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   background-color: #fff;
 }
@@ -19515,7 +19515,6 @@ body {
 
 .footer-inner {
   margin-top: 0.5em;
-  display: table;
 }
 
 .announcement {
@@ -19563,15 +19562,11 @@ body {
   padding: 0.5em 1em;
 }
 
+.site-usage-policy {
+  font-size: 12px;
+}
+
 @media (min-width:768px) {
-  body {
-    margin-bottom: 71px;
-  }
-
-  #page-footer {
-    height: 71px;
-  }
-
   .footer-section {
     text-align: right;
   }
@@ -20006,10 +20001,6 @@ body#page-maintenance-message {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
-  }
-
-  .site-brand__logo {
-    float: right;
   }
 }
 

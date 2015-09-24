@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  margin: 0 0 100px;
+  margin: 0 0 130px;
   padding-top: 70px;
 }
 
@@ -15,7 +15,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   background-color: #fff;
 }
@@ -30,7 +30,7 @@ body {
 
 .footer-inner {
   margin-top: 0.5em;
-  display: table;
+  // display: table;
 }
 
 .announcement {
@@ -78,16 +78,11 @@ body {
   
 }
 
-@media (min-width: @screen-sm-min) {
-  
-  body {
-    margin-bottom: 71px;
-  }
-  
-  #page-footer {
-    height: 71px;
-  }
-    
+.site-usage-policy {
+  font-size: 12px;
+}
+
+@media (min-width: @screen-sm-min) {  
   .footer-section {
     text-align: left;
   }
