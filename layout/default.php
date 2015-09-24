@@ -138,26 +138,29 @@ echo $OUTPUT->doctype() ?>
 </aside> <!-- end .pre-footer -->
 <?php } ?>
 
-<footer id="page-footer">
-    
-  <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-  
-  <div class="container footer-inner">
-    <a title="go to Waterford Institute of Technology homepage" class="logo site-brand__logo" href="http://wit.ie/">
-      <img src="<?php echo $OUTPUT->pix_url('brand-logo', 'theme'); ?>" alt="Waterford Institute of Technology" />
-    </a>
-       
-    <nav>
-      <ul class="footer-nav">
-        <li><a href="http://elearning.wit.ie/support">Help</a></li>
-        <li><a href="http://docs.moodle.org">Moodle.org Docs</a></li>
-        <li><a href="http://elearning.wit.ie/about">Contact Us</a></li>
-      </ul>
-    </nav>
-    
-  </div>
-  
-</footer>
+  <footer id="page-footer">
+    <section class="footer-section">
+      <div class="container footer-inner">
+        <div class="row">
+            <div class="col-md-6">
+            <a title="go to Waterford Institute of Technology homepage" class="logo site-brand__logo" href="http://wit.ie/">
+              <img src="<?php echo $OUTPUT->pix_url('brand-logo', 'theme'); ?>" alt="Waterford Institute of Technology" />
+            </a>
+            <nav>
+              <ul class="footer-nav">
+                <li><a href="http://elearning.wit.ie/support">Help</a></li>
+                <li><a href="http://docs.moodle.org">Moodle.org Docs</a></li>
+                <li><a href="http://elearning.wit.ie/about">Contact Us</a></li>
+               </ul>
+             </nav>
+        </div>
+        <div class="col-md-6">
+            <p class="site-usage-policy">Users of Moodle in Waterford Institute of Technology are reminded that your use of the Virtual Learning Environment may be logged and this information, with other personal data contained within the system, may be used by lecturers and/or facilitators to monitor progress and completion of modules.</p> 
+        </div>     
+         </div> <!-- end .row -->
+       </div> <!-- end .container -->
+     </section>
+  </footer>
 
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 

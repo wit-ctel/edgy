@@ -36,7 +36,7 @@ echo $OUTPUT->doctype() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 </head>
 
-<body <?php echo $OUTPUT->body_attributes(); ?>>
+<body <?php echo $OUTPUT->body_attributes(); ?> class="login">
         
     <?php if (preg_match('/^https?:\/\/staging./', $PAGE->url)) { ?>
       <div class="alert alert-warning">
@@ -121,18 +121,24 @@ echo $OUTPUT->doctype() ?>
   <footer id="page-footer">
     <section class="footer-section">
       <div class="container footer-inner">
-        <a title="go to Waterford Institute of Technology homepage" class="logo site-brand__logo" href="http://wit.ie/">
-          <img src="<?php echo $OUTPUT->pix_url('brand-logo', 'theme'); ?>" alt="Waterford Institute of Technology" />
-        </a>
-
-        <nav>
-          <ul class="footer-nav">
-            <li><a href="http://elearning.wit.ie/support">Help</a></li>
-            <li><a href="http://docs.moodle.org">Moodle.org Docs</a></li>
-            <li><a href="http://elearning.wit.ie/about">Contact Us</a></li>
-           </ul>
-         </nav>
-       </div>
+        <div class="row">
+            <div class="col-md-6">
+            <a title="go to Waterford Institute of Technology homepage" class="logo site-brand__logo" href="http://wit.ie/">
+              <img src="<?php echo $OUTPUT->pix_url('brand-logo', 'theme'); ?>" alt="Waterford Institute of Technology" />
+            </a>
+            <nav>
+              <ul class="footer-nav">
+                <li><a href="http://elearning.wit.ie/support">Help</a></li>
+                <li><a href="http://docs.moodle.org">Moodle.org Docs</a></li>
+                <li><a href="http://elearning.wit.ie/about">Contact Us</a></li>
+               </ul>
+             </nav>
+        </div>
+        <div class="col-md-6">
+            <p class="site-usage-policy">Users of Moodle in Waterford Institute of Technology are reminded that your use of the Virtual Learning Environment may be logged and this information, with other personal data contained within the system, may be used by lecturers and/or facilitators to monitor progress and completion of modules.</p> 
+        </div>     
+         </div> <!-- end .row -->
+       </div> <!-- end .container -->
      </section>
   </footer>
 
