@@ -50,6 +50,11 @@ echo $OUTPUT->doctype() ?>
     
         <div id="page-content" class="row">
           <div id="region-main" class="<?php echo $regions['content']; ?>">
+            
+            <div class="alert alert-warning" style="margin-top: -35px;" role="alert">
+              <p>If you are unable to login to Moodle and you <b>have not</b> completed your registration for the current academic year, please go to the <a href="http://www.wit.ie/registration" title="WIT Registration">WIT Registration page</a> and follow the instructions.</p>
+            </div>
+            
             <?php echo $OUTPUT->main_content(); ?>
             <small class="image-attribution">&copy; Image courtesy of Terry Murphy Photography</small>
           </div>
