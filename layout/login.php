@@ -51,10 +51,6 @@ echo $OUTPUT->doctype() ?>
         <div id="page-content" class="row">
           <div id="region-main" class="<?php echo $regions['content']; ?>">
             
-            <div class="alert alert-warning" style="margin-top: -35px;" role="alert">
-              <p>WIT student examination timetables are now available <a href="https://studentssp.wit.ie/LOGIN/?APP=EXMTIMETBL" title="WIT Exam timetables">here</a>. Please ensure that you bring your student card with you to each exam and have familiarised yourself with the location of all examination venues and your examination seat number.</p>
-            </div>
-            
             <?php echo $OUTPUT->main_content(); ?>
             <small class="image-attribution">&copy; Image courtesy of Terry Murphy Photography</small>
           </div>
