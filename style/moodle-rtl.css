@@ -19494,7 +19494,7 @@ html {
 }
 
 body {
-  margin: 0 0 130px;
+  margin: 0 0 250px;
   padding-top: 70px;
 }
 
@@ -19997,6 +19997,10 @@ body#page-maintenance-message {
 }
 
 @media (min-width:768px) {
+  body {
+    margin: 0 0 150px;
+  }
+
   #page-footer nav {
     display: table-cell;
     vertical-align: middle;
