@@ -51,11 +51,6 @@ echo $OUTPUT->doctype() ?>
         <div id="page-content" class="row">
           <div id="region-main" class="<?php echo $regions['content']; ?>">
             
-            <div class="alert alert-warning" style="margin-top: -35px;" role="alert">
-                      <strong>WIT exam information</strong><br><br>
-                      <p>WIT student <a href="https://studentssp.wit.ie/LOGIN/?APP=EXMTIMETBL" title="WIT Exam timetables">examination timetables</a> are now available. Please ensure that you bring your student card with you to each exam and have familiarised yourself with the <a href="https://www.wit.ie/current_students/student_affairs/timetables_venues#tab=panel-2" title="WIT exam venues"> location of all examination venues</a> and your examination seat number. You should also read and be aware of the <a href="https://www.wit.ie/current_students/student_affairs/Exam_Procedures_Regulations" title="WIT exam regulations">exam regulations</a>.</p>
-                        </div>
-            
             <?php echo $OUTPUT->main_content(); ?>
             <small class="image-attribution">&copy; Image courtesy of Terry Murphy Photography</small>
           </div>
