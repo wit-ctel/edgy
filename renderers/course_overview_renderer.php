@@ -34,7 +34,7 @@ class theme_edgy_block_course_overview_renderer extends block_course_overview_re
         $support_courses = array();
         
         foreach ($courses as $key => $course) {
-            if (preg_match("/^SUPPORT_/", $course->idnumber)) {
+            if (preg_match("/^SUPPORT|INFO|PROG_/", $course->idnumber)) {
                 $support_courses[$course->id] = $course;
                 unset($courses[$key]); // remove support course from array
             }    
